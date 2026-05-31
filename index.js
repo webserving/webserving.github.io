@@ -83,45 +83,52 @@ const PROJECTCONNECTOR=()=>{
 };
 
 const DATAPROCESS=()=>{
-if (localStorage.getItem("Native")) {
-    
+    if (localStorage.getItem("Native")) {
+        PRONATIVE();
+    } else {
+        PROLIVE();
+    };
+    PROJECTCONNECTOR();
+};
+
+const PRONATIVE=()=>{
 const DATA=`const ADD = ${ADD};
 const ANCHOR = ${ANCHOR};
 const AUDIO = ${AUDIO};
-    const BREAK = ${BREAK};
-    const CONDITION = ${CONDITION};
-    const DEJSONIFICATION = ${DEJSONIFICATION};
-    const DISPLAY = ${DISPLAY};
-    const DIV = ${DIV};
-    const FETCH = ${FETCH};
-    const GETINDEX = ${GETINDEX};
-    const HEADER = ${HEADER};
-    const HEADERFIVE = ${HEADERFIVE};
-    const HEADERFOUR = ${HEADERFOUR};
-    const HEADERSIX = ${HEADERSIX};
-    const HEADERTHREE = ${HEADERTHREE};
-    const HEADERTWO = ${HEADERTWO};
-    const IFRAME = ${IFRAME};
-    const JSONADDER = ${JSONADDER};
-    const JSONIFICATION = ${JSONIFICATION};
-    const JSONREMOVER = ${JSONREMOVER};
-    const LOCALCLEAR = ${LOCALCLEAR};
-    const LOCALDELETE = ${LOCALDELETE};
-    const LOCALSTORE = ${LOCALSTORE};
-    const PARAGRAPH = ${PARAGRAPH};
-    const REDUX = ${REDUX};
-    const SESSIONCLEAR = ${SESSIONCLEAR};
-    const SESSIONDELETE = ${SESSIONDELETE};
-    const SESSIONSTORE = ${SESSIONSTORE};
-    const STOREINDEX = ${STOREINDEX};
-    const TEXTAREA = ${TEXTAREA};
-    const VIDEO = ${VIDEO};
-    const ZOOM = ${ZOOM};
-              
+const BREAK = ${BREAK};
+const CONDITION = ${CONDITION};
+const DEJSONIFICATION = ${DEJSONIFICATION};
+const DISPLAY = ${DISPLAY};
+const DIV = ${DIV};
+const FETCH = ${FETCH};
+const GETINDEX = ${GETINDEX};
+const HEADER = ${HEADER};
+const HEADERFIVE = ${HEADERFIVE};
+const HEADERFOUR = ${HEADERFOUR};
+const HEADERSIX = ${HEADERSIX};
+const HEADERTHREE = ${HEADERTHREE};
+const HEADERTWO = ${HEADERTWO};
+const IFRAME = ${IFRAME};
+const JSONADDER = ${JSONADDER};
+const JSONIFICATION = ${JSONIFICATION};
+const JSONREMOVER = ${JSONREMOVER};
+const LOCALCLEAR = ${LOCALCLEAR};
+const LOCALDELETE = ${LOCALDELETE};
+const LOCALSTORE = ${LOCALSTORE};
+const PARAGRAPH = ${PARAGRAPH};
+const REDUX = ${REDUX};
+const SESSIONCLEAR = ${SESSIONCLEAR};
+const SESSIONDELETE = ${SESSIONDELETE};
+const SESSIONSTORE = ${SESSIONSTORE};
+const STOREINDEX = ${STOREINDEX};
+const TEXTAREA = ${TEXTAREA};
+const VIDEO = ${VIDEO};
+const ZOOM = ${ZOOM};           
 `;
 localStorage.setItem("CLOUDNATIVE",DATA);
-} else {
-    
+};
+
+const PROLIVE=()=>{
     window.ADD = ADD;
     window.ANCHOR = ANCHOR;
     window.AUDIO = AUDIO;
@@ -155,6 +162,5 @@ localStorage.setItem("CLOUDNATIVE",DATA);
     window.VIDEO = VIDEO;
     window.ZOOM = ZOOM;
 };
-PROJECTCONNECTOR();
-};
+
 DATAPROCESS();

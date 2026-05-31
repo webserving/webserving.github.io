@@ -1,0 +1,1 @@
+export const BODIER=document.querySelector("body");
