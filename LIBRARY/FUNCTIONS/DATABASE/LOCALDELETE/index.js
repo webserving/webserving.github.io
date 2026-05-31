@@ -1,3 +1,3 @@
-export const LOCALDELETE=()=>{
-
+export const LOCALDELETE=(NAME)=>{
+    localStorage.removeItem(NAME);
 };

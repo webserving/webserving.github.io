@@ -1,3 +1,3 @@
-export const SESSIONDELETE=()=>{
-
+export const SESSIONDELETE=(NAME)=>{
+    sessionStorage.removeItem(NAME);
 };
