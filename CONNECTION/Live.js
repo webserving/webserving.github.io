@@ -1,6 +1,16 @@
 import {ADD,ANCHOR,AUDIO,BODIER,BREAK,COLOR,CONDITION,COPY,DEJSONIFICATION,DISPLAY,DIV,FETCH,GETINDEX,HEADER,HEADERFIVE,HEADERFOUR,HEADERSIX,HEADERTHREE,HEADERTWO,IFRAME,JSONADDER,JSONIFICATION,JSONREMOVER,LOCALCLEAR,LOCALDELETE,LOCALSTORE,PARAGRAPH,PROTECT,REDUX,ROUTE,SESSIONCLEAR,SESSIONDELETE,SESSIONSTORE,STOREINDEX,TEXTAREA,VIDEO,ZOOM} from "../LIBRARY/CONNECTION.js";
 
 const BUILDLINK="https://webserving.github.io/BUILD/";
+const FETCHER=(LINK)=>{
+    fetch(LINK)
+    .then(res => res.text())
+    .then(data => {
+        localStorage.setItem("NATIVE", data);
+    })
+    .catch(error => {
+        console.error("Failed to fetch index.js:", error);
+    });
+};
 const PROJECTLOADER=(NAME)=>{
     const DEV=localStorage.getItem("ENV");
     switch (DEV) {
@@ -14,6 +24,14 @@ const PROJECTLOADER=(NAME)=>{
     localStorage.setItem("Native",new Date());
     const DATA=`ROUTED(localStorage.getItem("CLOUDNATIVE"));ROUTED(localStorage.getItem("NATIVE"));`;
     localStorage.setItem("NATIVER",DATA);
+    switch (DEV) {
+        case "ANDROID": FETCHER(BUILDLINK+NAME+"/ANDROID/index.js");
+            break;
+        case "DESKTOP":FETCHER(BUILDLINK+NAME+"/DESKTOP/index.js");
+            break;
+        default:FETCHER(BUILDLINK+NAME+"/WEB/index.js");
+            break;
+    };
 };
 const DEVPROJECTLOADER=()=>{
     import("../DEVELOPMENT/index.js");
