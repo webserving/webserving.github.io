@@ -1,4 +1,5 @@
 export const BODIED=()=>{
+    PROTECT();
     CLICK(BODIER,()=>{
         CHECK(!localStorage.getItem("Updates"),()=>{
             ONLINE(()=>{
