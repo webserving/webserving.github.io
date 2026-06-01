@@ -1,6 +1,6 @@
 export const CONDITION=(TERM,CALLBACK,CALBACKTWO)=>{
     if (TERM) {
-        CALBACK();
+        CALLBACK();
     } else {
         CALBACKTWO();
     };
