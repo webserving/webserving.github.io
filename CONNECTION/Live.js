@@ -13,8 +13,10 @@ const PROJECTLOADER=(NAME)=>{
             break;
     };
     localStorage.setItem("Native",new Date());
-    const DATA=`ROUTED(localStorage.getItem("CLOUDNATIVE"));ROUTED(localStorage.getItem("NATIVE"));`;
+    const DATA=`ROUTED(localStorage.getItem("CLOUDNATIVE"));ROUTED(localStorage.getItem("AUTORUN"));ROUTED(localStorage.getItem("NATIVE"));`;
     localStorage.setItem("NATIVER",DATA);
+    const DATA2=`BODIED();`;
+    localStorage.setItem("AUTORUN",DATA2)
     if(!localStorage.getItem("Updates")){
         location.reload();
     };
@@ -43,7 +45,7 @@ window.ADD = ADD;
 window.ANCHOR = ANCHOR;
 window.APPMODE = APPMODE;
 window.AUDIO = AUDIO;
-window.BODIED = BODIED;
+window.BODIED = BODIED();
 window.BODIER = BODIER;
 window.BREAK = BREAK;
 window.CLEAR = CLEAR;
