@@ -1,3 +1,4 @@
-export const DEJSONIFICATION=()=>{
-
+export const DEJSONIFICATION=(DATA,CALLBACK)=>{
+    const MYDATATA = JSON.parse(DATA);
+    CALLBACK(MYDATATA);
 };
