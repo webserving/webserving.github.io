@@ -1,4 +1,4 @@
-export const CHECK=(CALLBACK)=>{
+export const CHECK=(TERM,CALLBACK)=>{
     if (TERM) {
         CALLBACK();
     };
