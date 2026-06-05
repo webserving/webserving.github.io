@@ -9,7 +9,9 @@ const PROJECTLOADER=(NAME)=>{
             break;
         case "DESKTOP":import(BUILDLINK+NAME+"/DESKTOP/index.js");
             break;
-        default:import(BUILDLINK+NAME+"/WEB/index.js");
+        case "WEB":import(BUILDLINK+NAME+"/WEB/index.js");
+            break;
+        default:import("../DEVELOPMENT/index.js");
             break;
     };
     const DATA=`ROUTED(localStorage.getItem("CLOUDNATIVE"));ROUTED(localStorage.getItem("AUTORUN"));ROUTED(localStorage.getItem("NATIVE"));`;

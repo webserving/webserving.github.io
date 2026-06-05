@@ -25,7 +25,9 @@ const PROJECTLOADER=(NAME)=>{
             break;
         case "DESKTOP":FETCHER(BUILDLINK+NAME+"/DESKTOP/index.js");
             break;
-        default:FETCHER(BUILDLINK+NAME+"/WEB/index.js");
+        case "WEB":FETCHER(BUILDLINK+NAME+"/WEB/index.js");
+            break;
+        default:FETCHER("./DEVELOPMENT/index.js");
             break;
     };
 };
