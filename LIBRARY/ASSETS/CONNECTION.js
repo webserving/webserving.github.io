@@ -1,0 +1,3 @@
+import { WHITEADDICON } from "./DATABASE/IMAGES/ICONS/WHITEICONS/ADD/index.js";
+
+export {WHITEADDICON}

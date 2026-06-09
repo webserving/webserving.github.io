@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+body{
+    text-align: center;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+input{
+    width: 80%;
+    height: 32px;
+    margin: 3%;
+}
+
+textarea{
+    width: 80%;
+    height: 32px;
+    margin: 5%;
+}
+
+.Spotted{
+    height: 200px;
+}
+
+button{
+    width: 80%;
+    height: 50px;
+    color: white;
+    margin: 5%;
+    background: blue;
+    outline: none;
+}
+
+h1{
+    margin: 3%;
+}
+
+</style>
+
+
+<body>
+
+    <h1>IMAGE BASE</h1>
+
+    <input  id="Name" type="Enter The Base 64 Name">
+
+    <textarea name="Enter Image Code" id="Code"></textarea>
+
+    <button class="Make" >Generate</button>
+
+    <textarea class="Spotted"></textarea>
+    
+    <script>
+
+        const Name=document.querySelector("#Name");
+
+        const Code=document.querySelector("#Code");
+
+        const Make=document.querySelector(".Make");
+
+        const Spotted=document.querySelector(".Spotted");
+
+        Make.addEventListener("click",()=>{
+
+            if (Name.value) {
+
+                if (Code.value) {
+
+                    Spotted.innerHTML=`let ${Name.value};
+
+if(localStorage.getItem("Native")){
+
+${Name.value}="'${Code.value}'";
+
+}else{
+
+${Name.value}="${Code.value}";
+
+}    
+
+export{${Name.value}}
+                    `;
+
+                    
+                } else {
+
+                    alert("Enter Code Value");
+                    
+                };
+
+            } else {
+
+                alert("Enter Value Name");
+                
+            }
+
+        });
+
+    </script>
+
+    
+</body>
+</html>

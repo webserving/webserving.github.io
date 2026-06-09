@@ -1,3 +1,11 @@
-export const HEADER=()=>{
+export const HEADER=(HOLDER,TEXT,CALLBACk)=>{
+
+    ELEMENTED(HOLDER,"h1",(DATA)=>{
+
+        DISPLAY(DATA,TEXT||"Your Text");
+
+        CALLBACk(DATA);
+
+    });
 
 };
