@@ -29,7 +29,7 @@ const DESKTOPVIEW=()=>{
 
     CLEAR("");
 
-    HEADER(DATA,"NCOR",()=>{
+    HEADER("","NCOO",()=>{
 
     });
     
