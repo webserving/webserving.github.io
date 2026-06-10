@@ -28,12 +28,15 @@ const MOBILEVIEW=()=>{
 
         FETCH(LINK,"",(Data)=>{
 
-            console.log(Data);
+            CLEAR(DATA);
 
             REDUX(Data,(Info)=>{
 
                 DIV(DATA,(DATATED)=>{
 
+                    OVERFLOW(DATATED,"hidden");
+                    FLEXSHRINK(DATATED);
+                    MARGIN(DATATED,"5%");
                     WIDTH(DATATED,"80px");
                     HEIGHT(DATATED,"80%");
                     BORDERRADIUS(DATATED,"50px");

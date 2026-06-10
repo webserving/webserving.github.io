@@ -4,15 +4,16 @@ import { BORDERRADIUS } from "./DATABASE/BORDERRADIUS/index.js";
 import { BOTTOM } from "./DATABASE/BOTTOM/index.js";
 import { COLOR } from "./DATABASE/COLOR/index.js";
 import { DISPLAYED } from "./DATABASE/DISPLAY/index.js";
+import { FLEXSHRINK } from "./DATABASE/FLEXSHRINK/index.js";
 import { HEIGHT } from "./DATABASE/HEIGHT/index.js";
 import { LEFT } from "./DATABASE/LEFT/index.js";
 import { MARGIN } from "./DATABASE/MARGIN/index.js";
 import { OUTLINE } from "./DATABASE/OUTLINE/index.js";
+import { OVERFLOW } from "./DATABASE/OVERFLOW/index.js";
 import { PADDING } from "./DATABASE/PADDING/index.js";
 import { RIGHT } from "./DATABASE/RIGHT/index.js";
 import { TEXTALIGN } from "./DATABASE/TEXTALIGN/index.js";
 import { TOP } from "./DATABASE/TOP/index.js";
 import { WIDTH } from "./DATABASE/WIDTH/index.js";
 
-
-export{BACKGROUND,BORDER,BORDERRADIUS,BOTTOM,COLOR,DISPLAYED,HEIGHT,LEFT,MARGIN,OUTLINE,PADDING,RIGHT,TEXTALIGN,TOP,WIDTH};
+export{BACKGROUND,BORDER,BORDERRADIUS,BOTTOM,COLOR,DISPLAYED,FLEXSHRINK,HEIGHT,LEFT,MARGIN,OUTLINE,OVERFLOW,PADDING,RIGHT,TEXTALIGN,TOP,WIDTH};
