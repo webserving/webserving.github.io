@@ -1,17 +1,4 @@
-const SMALLDATA=[
-    {
-        "Name":"FoodPAck"
-    },
-    {
-        "Name":"FoodPAck"
-    },
-    {
-        "Name":"FoodPAck"
-    },
-    {
-        "Name":"FoodPAck"
-    },
-]
+const LINK="";
 
 const MOBILEVIEW=()=>{
 
@@ -38,6 +25,8 @@ const MOBILEVIEW=()=>{
     });
 
     INLINEVIEW("",(DATA)=>{
+
+        FETCH()
 
         BACKGROUND(DATA,"#cdcdcd50");
 
