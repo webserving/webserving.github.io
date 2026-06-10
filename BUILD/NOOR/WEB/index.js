@@ -1,3 +1,5 @@
+const LINK="https://eliteserving.github.io/LIBRARY/DEMO/Data.json";
+
 const MOBILEVIEW=()=>{
 
     CLEAR("");
@@ -22,7 +24,33 @@ const MOBILEVIEW=()=>{
 
     });
 
-    
+    INLINEVIEW("",(DATA)=>{
+
+        FETCH(LINK,"",(Data)=>{
+
+            CLEAR(DATA);
+
+            REDUX(Data,(Info)=>{
+
+                DIV(DATA,(DATATED)=>{
+
+                    OVERFLOW(DATATED,"hidden");
+                    FLEXSHRINK(DATATED);
+                    MARGIN(DATATED,"5%");
+                    WIDTH(DATATED,"80px");
+                    HEIGHT(DATATED,"80%");
+                    BORDERRADIUS(DATATED,"50px");
+                    BACKGROUND(DATATED,"blue");
+                    BORDER(DATATED,"white");
+
+                });
+
+            });
+
+        });
+
+    });
+
 };
 
 const DESKTOPVIEW=()=>{
