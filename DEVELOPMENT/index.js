@@ -28,6 +28,8 @@ const MOBILEVIEW=()=>{
 
         FETCH(LINK,"",(Data)=>{
 
+            console.log(Data);
+
             REDUX(Data,(Info)=>{
 
                 DIV(DATA,(DATATED)=>{
