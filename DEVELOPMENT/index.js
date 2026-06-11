@@ -2,9 +2,9 @@ const LINK="https://eliteserving.github.io/LIBRARY/DEMO/Data.json";
 
 const MOBILEVIEW=()=>{
 
-    CLEAR("");
-
     VIEWS("",(HOLDER)=>{
+
+        CLEAR("");
 
         HEIGHT(HOLDER,"");
 
