@@ -105,7 +105,6 @@ const MOBILEVIEW=()=>{
         INLINEVIEW(HOLDER,(DATA)=>{
     
             HEIGHT(DATA,"70%");
-            BORDER(DATA,"#FFFFFF10");
 
             VIEWS(DATA,(DATATED)=>{
     
@@ -116,7 +115,7 @@ const MOBILEVIEW=()=>{
                 HEIGHT(DATATED,"95%");
                 BORDERRADIUS(DATATED,"5px");
                 BACKGROUND(DATATED,"blue");
-                BORDER(DATATED,"white");
+                BORDER(DATATED,"#FFFFFF10");
     
             });
 
@@ -129,7 +128,7 @@ const MOBILEVIEW=()=>{
                 HEIGHT(DATATED,"95%");
                 BORDERRADIUS(DATATED,"5px");
                 BACKGROUND(DATATED,"blue");
-                BORDER(DATATED,"white");
+                BORDER(DATATED,"#FFFFFF10");
     
             });
 
@@ -142,7 +141,7 @@ const MOBILEVIEW=()=>{
                 HEIGHT(DATATED,"95%");
                 BORDERRADIUS(DATATED,"5px");
                 BACKGROUND(DATATED,"blue");
-                BORDER(DATATED,"white");
+                BORDER(DATATED,"#FFFFFF10");
     
             });
     
