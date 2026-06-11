@@ -1,4 +1,4 @@
-const LINK="../LIBRARY/DEMO/Data.json";
+const LINK="https://eliteserving.github.io/LIBRARY/DEMO/Data.json";
 
 const MOBILEVIEW=()=>{
 
@@ -106,7 +106,7 @@ const MOBILEVIEW=()=>{
     
             HEIGHT(DATA,"70%");
             BORDER(DATA,"#FFFFFF10");
-            
+
             VIEWS(DATA,(DATATED)=>{
     
                 OVERFLOW(DATATED,"hidden");
