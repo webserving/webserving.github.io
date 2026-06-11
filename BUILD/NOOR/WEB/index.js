@@ -76,7 +76,7 @@ const MOBILEVIEW=()=>{
                 BUTTON(DATATED,"Zakat",(DATATID)=>{
     
                     MARGIN(DATATID,"");
-                    WIDTH(DATATID,"50%");
+                    WIDTH(DATATID,"35%");
     
                 });
     
@@ -84,7 +84,7 @@ const MOBILEVIEW=()=>{
     
                     MARGIN(DATATID,"");
                     HEIGHT(DATATID,"50px");
-                    WIDTH(DATATID,"40%");
+                    WIDTH(DATATID,"53%");
     
                 });
     
