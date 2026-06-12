@@ -153,8 +153,74 @@ const MOBILEVIEW=()=>{
     
         });
 
-    });
+        HEADER(HOLDER,"Appeals That need your support",(DATATED)=>{
+        
+            MARGIN(DATATED,"5%");
+        
+        });
 
+        VIEWS(HOLDER,(DATA)=>{
+            
+            WIDTH(DATA,"100%");
+            HEIGHT(DATA,"");
+            BACKGROUND(DATA,"transparent");
+            MARGINRIGHT(DATA,"2%")
+        
+            FETCH(LINK,"",(Data)=>{
+    
+                REDUX(Data,()=>{
+
+                    BREAK(DATA,()=>{
+            
+                    });
+    
+                    VIEWS(DATA,(DATATA)=>{
+                
+                        WIDTH(DATATA,"90%");
+                        HEIGHT(DATATA,"70%");
+                        BORDERRADIUS(DATATA,"10px");
+                        BACKGROUND(DATATA,"orange");
+                        MARGINRIGHT(DATATA,"2%")
+            
+                    });
+            
+                });
+    
+            });
+        });
+
+        BREAK(HOLDER,()=>{
+            
+        });
+
+        VIEWS(HOLDER,(DATA)=>{
+            
+            WIDTH(DATA,"100%");
+            HEIGHT(DATA,"50%");
+            BACKGROUND(DATA,"red");
+            MARGINRIGHT(DATA,"2%")
+
+        });
+
+        BREAK(HOLDER,()=>{
+            
+        });
+
+        VIEWS(HOLDER,(DATA)=>{
+            
+            WIDTH(DATA,"100%");
+            HEIGHT(DATA,"80%");
+            BACKGROUND(DATA,"green");
+            MARGINRIGHT(DATA,"2%")
+
+        });
+
+        BREAK(HOLDER,()=>{
+            
+        });
+
+    });
+  
 };
 
 const DESKTOPVIEW=()=>{
