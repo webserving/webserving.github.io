@@ -2,9 +2,9 @@ const LINK="https://eliteserving.github.io/LIBRARY/DEMO/Data.json";
 
 const MOBILEVIEW=()=>{
 
-    CREATEDATABASE("hgh",(Data)=>{
-
-        console.log(Data);
+    GETDATA(MAINCONNECTIONAPI,"DATABASES",(DARA)=>{
+        
+        console.log(DARA)
 
     });
 
