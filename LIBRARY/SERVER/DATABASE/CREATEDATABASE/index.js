@@ -14,7 +14,7 @@ export const CREATEDATABASE=(NAME,CALLBACK)=>{
                         });
                     });
                 });
-            })
+            });
         });
     });
 }; 
