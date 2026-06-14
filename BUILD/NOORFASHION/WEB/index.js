@@ -23,6 +23,22 @@ const MOBILEVIEW=()=>{
             });
     
         });
+
+        INLINEVIEW(HOLDER,(DATA)=>{
+
+            HEIGHT(DATA,"50px");
+
+            BACKGROUND(DATA,"red");
+
+        });
+
+        VIEWS(HOLDER,(DATA)=>{
+
+            HEIGHT(DATA,"");
+
+            BACKGROUND(DATA,"Blue");
+
+        });
     
     });
   
