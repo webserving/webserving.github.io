@@ -1,3 +1,5 @@
+
+
 const LINK="https://docs.google.com/spreadsheets/d/1D7Km39gogTyE1i991NJ9E0jxYBzlhga2vuDpHv4rNk8/edit?usp=sharing";
 
 const MOBILEVIEW=()=>{
@@ -28,7 +30,23 @@ const MOBILEVIEW=()=>{
 
             HEIGHT(DATA,"50px");
 
-            BACKGROUND(DATA,"red");
+            BUTTON(DATA,"ALL",(DATATED)=>{
+
+                MARGIN(DATATED,"");
+
+                WIDTH(DATATED,"50px");
+
+                HEIGHT(DATATED,"32px");
+            
+            });
+
+            INLINEVIEW(DATA,(DATITED)=>{
+
+                BACKGROUND(DATITED,"red");
+
+                WIDTH(DATITED,"70%");
+
+            });
 
         });
 
