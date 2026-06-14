@@ -61,6 +61,8 @@ const PROJECTCONNECTOR=()=>{
             break;
         case "Tafyz_Craft_Limited":PROJECTLOADER("TAFYZ");
             break;    
+        case "ShyLanSirajFashionHub":PROJECTLOADER("NOORFASHION");
+            break; 
         default:
             break;
     };
