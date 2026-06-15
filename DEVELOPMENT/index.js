@@ -2,9 +2,7 @@ const LINK="https://docs.google.com/spreadsheets/d/1D7Km39gogTyE1i991NJ9E0jxYBzl
 
 const MOBILEVIEW=()=>{
 
-    const INF=["Test","Tet,jdj"]
-
-   CREATETABLE(LINK,"Clothe",(Data)=>{
+   CREATETABLE(LINK,"bhag",(Data)=>{
 
     console.log(Data);
 
